@@ -1,5 +1,6 @@
 version: 0.2
 artifacts:
   files:
-    - '*/*'
-  base-directory: _docpress
+    - '**/*'
+  base-directory: '_docpress*'
+  discard-paths: yes
