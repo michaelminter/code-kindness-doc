@@ -1,0 +1,21 @@
+{
+  "name": "grok-doc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "grok-doc"
+  },
+  "author": "Michael Minter",
+  "license": "ISC",
+  "devDependencies": {
+    "docpress": "^0.8.2"
+  },
+  "docpress": {
+    "github": "michaelminter/grok-doc"
+  }
+}

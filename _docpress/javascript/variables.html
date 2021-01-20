@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/style.css?t=90051322">
+    <script src="../assets/script.js?t=93f1a66c"></script>
+    <title>Variables - CodeKindness</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <ul>
+          <li class="menu-item -level-0 -parent">
+            <ul class="submenu">
+              <li class="menu-item -level-1"><a class="link title  link-index" href="../index.html">CodeKindness</a>
+              </li>
+              <li class="menu-item -level-1 -parent"><span class="title">Architecture</span>
+                <ul class="submenu">
+                  <li class="menu-item -level-2"><a class="link title  link-architectureoverview" href="../architecture/overview.html">Overview</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-apioverview" href="../api/overview.html">APIs</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-architecturebusiness" href="../architecture/business.html">Business</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-architectureproject_management" href="../architecture/project_management.html">Project Management</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-architecturesecurity" href="../architecture/security.html">Security</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-architecturetesting" href="../architecture/testing.html">Testing</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item -level-1 -parent"><span class="title">DevOps</span>
+                <ul class="submenu">
+                  <li class="menu-item -level-2"><a class="link title  link-devopsoverview" href="../devops/overview.html">Overview</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item -level-1 -parent"><span class="title">Javascript</span>
+                <ul class="submenu">
+                  <li class="menu-item -level-2"><a class="link title  link-javascriptoverview" href="../javascript/overview.html">Overview</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-javascriptoperators" href="../javascript/operators.html">Operators</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-javascriptproperties" href="../javascript/properties.html">Properties</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-javascriptreact" href="../javascript/react.html">React</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title -active link-javascriptvariables" href="../javascript/variables.html">Variables</a>
+                    <ul class="headings heading-list">
+                      <li class="heading-item -depth-2"><a class="hlink link-cloning" href="#cloning">Cloning</a>
+                        <ul class="heading-list -depth-2">
+                          <li class="heading-item -depth-3"><a class="hlink link-shallow-copy" href="#shallow-copy">shallow copy</a>
+                          </li>
+                          <li class="heading-item -depth-3"><a class="hlink link-deep-copy" href="#deep-copy">deep copy</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item -level-1 -parent"><span class="title">Ruby</span>
+                <ul class="submenu">
+                  <li class="menu-item -level-2"><a class="link title  link-rubyoverview" href="../ruby/overview.html">Overview</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-rubygems" href="../ruby/gems.html">Gems</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-rubyrails" href="../ruby/rails.html">Rails</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item -level-1 -parent"><span class="title">SQL</span>
+                <ul class="submenu">
+                  <li class="menu-item -level-2"><a class="link title  link-sqloverview" href="../sql/overview.html">Overview</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="body page-javascriptvariables">
+        <div class="header-nav">
+          <div class="right"><a class="iconlink" href="https://github.com/michaelminter/grok-doc" data-title="michaelminter/grok-doc">
+              <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="variables">Variables</h1>
+<h2 id="cloning">Cloning</h2>
+<h3 id="shallow-copy">shallow copy</h3>
+<pre><code class="lang-js"><span class="pl-k">let</span> newDescriptions = [...this.state.descriptions]
+<span class="pl-k">let</span> newDescriptions = <span class="pl-c1">Object</span>.assign([], <span class="pl-k">this</span>.state.descriptions)
+</code></pre>
+<h3 id="deep-copy">deep copy</h3>
+<pre><code class="lang-js"><span class="pl-k">import</span> _ <span class="pl-k">from</span> <span class="pl-s">&apos;lodash&apos;</span>
+
+<span class="pl-k">let</span> newDescriptions = <span class="pl-c1">JSON</span>.parse(<span class="pl-c1">JSON</span>.stringify(<span class="pl-k">this</span>.state.descriptions))
+<span class="pl-k">let</span> newDescriptions = _.cloneDeep(<span class="pl-k">this</span>.state.descriptions)
+</code></pre>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../javascript/react.html"><span class="title">React</span></a></div>
+          <div class="right"><a href="../ruby/overview.html"><span class="label">Next: </span><span class="title">Overview</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
