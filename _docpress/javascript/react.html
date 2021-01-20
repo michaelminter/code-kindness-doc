@@ -64,8 +64,6 @@
                         <ul class="heading-list -depth-2">
                           <li class="heading-item -depth-3"><a class="hlink link-virtual-dom" href="#virtual-dom">Virtual DOM</a>
                           </li>
-                          <li class="heading-item -depth-3"><a class="hlink link-render()" href="#render()">render()</a>
-                          </li>
                         </ul>
                       </li>
                       <li class="heading-item -depth-2"><a class="hlink link-components" href="#components">Components</a>
@@ -208,13 +206,6 @@
 <p>The red circles represent the nodes that have changed. These nodes represent the UI elements that have had their state changed. The difference between the previous version of the virtual DOM tree and the current virtual DOM tree is then calculated. The whole parent subtree then gets re-rendered to give the updated UI. This updated tree is then batch updated to the real DOM.</p>
 <p>In React every UI piece is a component, and each component has a state. React follows the observable pattern and listens for state changes. When the state of a component changes, React updates the virtual DOM tree. Once the virtual DOM has been updated, React then compares the current version of the virtual DOM with the previous version of the virtual DOM. This process is called &#x201C;diffing&#x201D;.</p>
 <p>Once React knows which virtual DOM objects have changed, then React updates only those objects, in the real DOM. This makes the performance far better when compared to manipulating the real DOM directly. This makes React standout as a high performance JavaScript library.</p>
-<h3 id="render()">render()</h3>
-<p><code>render()</code> is where the UI gets updated and rendered. <code>render()</code> is the required lifecycle method in React.</p>
-<p><code>render()</code> is the point of entry where the tree of React elements are created. When a state or prop within the component is updated, the <code>render()</code> will return a different tree of React elements. If you use <code>setState()</code> within the component, React immediately detects the state change and re-renders the component.</p>
-<p>React then figures out how to efficiently update the UI to match the most recent tree changes.</p>
-<p>This is when React updates its virtual DOM first and updates only the object that have changed in the real DOM.</p>
-<p>React follows a batch update mechanism to update the real DOM. Hence, leading to increased performance. This means that updates to the real DOM are sent in batches, instead of sending updates for every single change in state.</p>
-<p>The repainting of the UI is the most expensive part, and React efficiently ensures that the real DOM receives only batched updates to repaint the UI.</p>
 <h2 id="components">Components</h2>
 <p>A component can be declared in several different ways. It can be a class with a <code>render()</code> method. Alternatively, in simple cases, it can be defined as a function. In either case, it takes props as an input, and returns a JSX tree as the output:</p>
 <pre><code class="lang-js"><span class="pl-k">const</span> Button = <span class="hljs-function">(<span class="hljs-params">{ onLogin }</span>) =&gt;</span>
@@ -457,6 +448,12 @@ Page.propTypes = {
 &lt;/ErrorBoundary&gt;
 </code></pre>
 <h3 id="rendering">Rendering</h3>
+<p><code>render()</code> is where the UI gets updated and rendered. <code>render()</code> is the required lifecycle method in React.</p>
+<p><code>render()</code> is the point of entry where the tree of React elements are created. When a state or prop within the component is updated, the <code>render()</code> will return a different tree of React elements. If you use <code>setState()</code> within the component, React immediately detects the state change and re-renders the component.</p>
+<p>React then figures out how to efficiently update the UI to match the most recent tree changes.</p>
+<p>This is when React updates its virtual DOM first and updates only the object that have changed in the real DOM.</p>
+<p>React follows a batch update mechanism to update the real DOM. Hence, leading to increased performance. This means that updates to the real DOM are sent in batches, instead of sending updates for every single change in state.</p>
+<p>The repainting of the UI is the most expensive part, and React efficiently ensures that the real DOM receives only batched updates to repaint the UI.</p>
 <p>By default, when your component&apos;s state or props change, your component will re-render. If your <code>render()</code> method depends on some other data, you can tell React that the component needs re-rendering by calling <code>forceUpdate()</code>.</p>
 <pre><code class="lang-javascript">component.forceUpdate(callback)
 </code></pre>

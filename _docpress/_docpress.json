@@ -303,11 +303,6 @@
                     "title": "Virtual DOM",
                     "depth": 3,
                     "id": "virtual-dom"
-                  },
-                  {
-                    "title": "render()",
-                    "depth": 3,
-                    "id": "render()"
                   }
                 ]
               },
@@ -1082,11 +1077,6 @@
               "title": "Virtual DOM",
               "depth": 3,
               "id": "virtual-dom"
-            },
-            {
-              "title": "render()",
-              "depth": 3,
-              "id": "render()"
             }
           ]
         },
