@@ -509,6 +509,8 @@ The primary purpose of props in React is to provide following component function
 
 This `reactProp` name then becomes a property attached to React's native props object which originally already exists on all components created using React library.
 
+The React philosophy is that props should be immutable and top-down. This means that a parent can send any prop values to a child, but the child can't modify received props.
+
 ### Validating
 When the application is running in *development mode*, React will automatically check all props that we set on components to make sure they have *correct type*. If the type is incorrect, React will generate warning messages in the console. It's disabled in *production mode* due to performance impact. The mandatory props are defined with `isRequired`.
 

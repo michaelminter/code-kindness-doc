@@ -528,6 +528,7 @@ Page.propTypes = {
 <pre><code class="lang-js">&lt;Element reactProp={<span class="pl-s">&apos;1&apos;</span>} /&gt;
 </code></pre>
 <p>This <code>reactProp</code> name then becomes a property attached to React&apos;s native props object which originally already exists on all components created using React library.</p>
+<p>The React philosophy is that props should be immutable and top-down. This means that a parent can send any prop values to a child, but the child can&apos;t modify received props.</p>
 <h3 id="validating">Validating</h3>
 <p>When the application is running in <em>development mode</em>, React will automatically check all props that we set on components to make sure they have <em>correct type</em>. If the type is incorrect, React will generate warning messages in the console. It&apos;s disabled in <em>production mode</em> due to performance impact. The mandatory props are defined with <code>isRequired</code>.</p>
 <p>The set of predefined prop types:</p>
