@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/style.css?t=90051322">
+    <script src="../assets/script.js?t=93f1a66c"></script>
+    <title>APIs - CodeKindness</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <ul>
+          <li class="menu-item -level-0 -parent">
+            <ul class="submenu">
+              <li class="menu-item -level-1"><a class="link title  link-index" href="../index.html">CodeKindness</a>
+              </li>
+              <li class="menu-item -level-1 -parent"><span class="title">Architecture</span>
+                <ul class="submenu">
+                  <li class="menu-item -level-2"><a class="link title  link-architectureoverview" href="../architecture/overview.html">Overview</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title -active link-apioverview" href="../api/overview.html">APIs</a>
+                    <ul class="headings heading-list">
+                      <li class="heading-item -depth-2"><a class="hlink link-restful" href="#restful">RESTful</a>
+                      </li>
+                      <li class="heading-item -depth-2"><a class="hlink link-graphql" href="#graphql">GraphQL</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-architecturebusiness" href="../architecture/business.html">Business</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-architectureproject_management" href="../architecture/project_management.html">Project Management</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-architecturesecurity" href="../architecture/security.html">Security</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-architecturetesting" href="../architecture/testing.html">Testing</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item -level-1 -parent"><span class="title">DevOps</span>
+                <ul class="submenu">
+                  <li class="menu-item -level-2"><a class="link title  link-devopsoverview" href="../devops/overview.html">Overview</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item -level-1 -parent"><span class="title">Javascript</span>
+                <ul class="submenu">
+                  <li class="menu-item -level-2"><a class="link title  link-javascriptoverview" href="../javascript/overview.html">Overview</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-javascriptoperators" href="../javascript/operators.html">Operators</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-javascriptproperties" href="../javascript/properties.html">Properties</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-javascriptreact" href="../javascript/react.html">React</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-javascriptvariables" href="../javascript/variables.html">Variables</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item -level-1 -parent"><span class="title">Ruby</span>
+                <ul class="submenu">
+                  <li class="menu-item -level-2"><a class="link title  link-rubyoverview" href="../ruby/overview.html">Overview</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-rubygems" href="../ruby/gems.html">Gems</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-rubyrails" href="../ruby/rails.html">Rails</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item -level-1 -parent"><span class="title">SQL</span>
+                <ul class="submenu">
+                  <li class="menu-item -level-2"><a class="link title  link-sqloverview" href="../sql/overview.html">Overview</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="body page-apioverview">
+        <div class="header-nav">
+          <div class="right"><a class="iconlink" href="https://github.com/michaelminter/grok-doc" data-title="michaelminter/grok-doc">
+              <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="api">API</h1>
+<h2 id="restful">RESTful</h2>
+<p>REST (REpresentational State Transfer), is basically an architectural style of development having some principles:</p>
+<ul>
+<li>It should be stateless.</li>
+<li>It should access all the resources from the server using only URI.</li>
+<li>It does not have inbuilt encryption.</li>
+<li>It does not have session.</li>
+<li>It uses one and only one protocol - HTTP.</li>
+<li>For performing CRUD operations, it should use HTTP verbs such as get, post, put and delete.</li>
+<li>It should return the result only in the form of JSON or XML, atom, OData etc. (lightweight data)</li>
+</ul>
+<p><strong>REST based services</strong> follow some of the above principles and not all</p>
+<p><strong>RESTful services</strong> means it follows all the above principles.</p>
+<p>MVC supports only some of the above REST principles whereas WEB API supports all the above REST Principles.</p>
+<p>MVC only supports the following from the REST API:</p>
+<ul>
+<li>We can access the resource using URI</li>
+<li>It supports the HTTP verb to access the resource from server</li>
+<li>It can return the results in the form of JSON, XML, that is the HTTPResponse.</li>
+</ul>
+<p>However, at the same time in MVC:</p>
+<ul>
+<li>We can use the session</li>
+<li>We can make it stateful</li>
+<li>We can return video or image from the controller action method which violates the REST principle of returning lightweight data.</li>
+</ul>
+<h2 id="graphql">GraphQL</h2>
+<p>GraphQL was developed to cope with the need for more flexibility and efficiency! It solves many of the shortcomings and inefficiencies that developers experience when interacting with REST APIs.</p>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../architecture/overview.html"><span class="title">Overview</span></a></div>
+          <div class="right"><a href="../architecture/business.html"><span class="label">Next: </span><span class="title">Business</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
