@@ -243,6 +243,17 @@ Page.propTypes = {
 }
 ```
 
+### Constants
+You can use ES7 `static` field to define constant.
+
+ ```javascript
+ class MyComponent extends React.Component {
+   static DEFAULT_PAGINATION = 10
+ }
+ ```
+
+ *Static fields* are part of the *Class Fields* stage 3 proposal.
+
 ### Binding
 1. __Binding in Constructor:__ In JavaScript classes, the methods are not bound by default. The same thing applies for React event handlers defined as class methods. Normally we bind them in constructor.
 

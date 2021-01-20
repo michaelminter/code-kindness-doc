@@ -70,6 +70,8 @@
                         <ul class="heading-list -depth-2">
                           <li class="heading-item -depth-3"><a class="hlink link-types" href="#types">Types</a>
                           </li>
+                          <li class="heading-item -depth-3"><a class="hlink link-constants" href="#constants">Constants</a>
+                          </li>
                           <li class="heading-item -depth-3"><a class="hlink link-binding" href="#binding">Binding</a>
                           </li>
                           <li class="heading-item -depth-3"><a class="hlink link-context" href="#context">Context</a>
@@ -329,6 +331,13 @@ Page.propTypes = {
   <span class="hljs-attr">page</span>: PropTypes.oneOf(<span class="pl-c1">Object</span>.keys(PAGES)).isRequired
 }
 </code></pre>
+<h3 id="constants">Constants</h3>
+<p>You can use ES7 <code>static</code> field to define constant.</p>
+<pre><code class="lang-javascript"><span class="hljs-class"><span class="pl-k">class</span> <span class="pl-ent">MyComponent</span> <span class="pl-k">extends</span> <span class="pl-ent">React</span>.<span class="pl-ent">Component</span> </span>{
+  <span class="pl-k">static</span> DEFAULT_PAGINATION = <span class="hljs-number">10</span>
+}
+</code></pre>
+<p><em>Static fields</em> are part of the <em>Class Fields</em> stage 3 proposal.</p>
 <h3 id="binding">Binding</h3>
 <ol>
 <li><strong>Binding in Constructor:</strong> In JavaScript classes, the methods are not bound by default. The same thing applies for React event handlers defined as class methods. Normally we bind them in constructor.</li>

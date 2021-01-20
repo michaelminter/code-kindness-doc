@@ -317,6 +317,11 @@
                     "id": "types"
                   },
                   {
+                    "title": "Constants",
+                    "depth": 3,
+                    "id": "constants"
+                  },
+                  {
                     "title": "Binding",
                     "depth": 3,
                     "id": "binding"
@@ -1089,6 +1094,11 @@
               "title": "Types",
               "depth": 3,
               "id": "types"
+            },
+            {
+              "title": "Constants",
+              "depth": 3,
+              "id": "constants"
             },
             {
               "title": "Binding",

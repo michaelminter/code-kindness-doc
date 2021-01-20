@@ -16,6 +16,6 @@
     "docpress": "^0.8.2"
   },
   "docpress": {
-    "github": "michaelminter/grok-doc"
+    "github": "michaelminter/code-kindness-doc"
   }
 }
