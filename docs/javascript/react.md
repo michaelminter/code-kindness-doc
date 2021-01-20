@@ -409,6 +409,42 @@ component.forceUpdate(callback)
 
 It is recommended to avoid all uses of `forceUpdate()` and only read from `this.props` and `this.state` in `render()`.
 
+Is it possible to use React without rendering HTML?
+
+ It is possible with latest version (>=16.2). Below are the possible options:
+
+ ```jsx harmony
+ render() {
+   return false
+ }
+ ```
+
+ ```jsx harmony
+ render() {
+   return null
+ }
+ ```
+
+ ```jsx harmony
+ render() {
+   return []
+ }
+ ```
+
+ ```jsx harmony
+ render() {
+   return <React.Fragment></React.Fragment>
+ }
+ ```
+
+ ```jsx harmony
+ render() {
+   return <></>
+ }
+ ```
+
+ Returning `undefined` won't work.
+
 ## Hooks
 Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
 

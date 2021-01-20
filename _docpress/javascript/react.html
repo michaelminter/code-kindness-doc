@@ -458,6 +458,29 @@ Page.propTypes = {
 <pre><code class="lang-javascript">component.forceUpdate(callback)
 </code></pre>
 <p>It is recommended to avoid all uses of <code>forceUpdate()</code> and only read from <code>this.props</code> and <code>this.state</code> in <code>render()</code>.</p>
+<p>Is it possible to use React without rendering HTML?</p>
+<p>It is possible with latest version (&gt;=16.2). Below are the possible options:</p>
+<pre><code class="lang-jsx">render() {
+  <span class="pl-k">return</span> <span class="pl-c1">false</span>
+}
+</code></pre>
+<pre><code class="lang-jsx">render() {
+  <span class="pl-k">return</span> <span class="pl-c1">null</span>
+}
+</code></pre>
+<pre><code class="lang-jsx">render() {
+  <span class="pl-k">return</span> []
+}
+</code></pre>
+<pre><code class="lang-jsx">render() {
+  <span class="pl-k">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">React.Fragment</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">React.Fragment</span>&gt;</span></span>
+}
+</code></pre>
+<pre><code class="lang-jsx">render() {
+  <span class="pl-k">return</span> <span class="xml"><span class="hljs-tag">&lt;&gt;</span><span class="hljs-tag">&lt;/&gt;</span></span>
+}
+</code></pre>
+<p>Returning <code>undefined</code> won&apos;t work.</p>
 <h2 id="hooks">Hooks</h2>
 <p>Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.</p>
 <p>Hooks are JavaScript functions, but they impose two additional rules:</p>
