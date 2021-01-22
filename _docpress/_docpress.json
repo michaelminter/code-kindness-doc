@@ -8,9 +8,26 @@
         "slug": "index",
         "headings": [
           {
-            "title": "Other Style Guides",
+            "title": "APIs",
             "depth": 2,
-            "id": "other-style-guides"
+            "id": "apis"
+          },
+          {
+            "title": "Style Guides",
+            "depth": 2,
+            "id": "style-guides",
+            "headings": [
+              {
+                "title": "Javascript",
+                "depth": 3,
+                "id": "javascript"
+              },
+              {
+                "title": "Ruby",
+                "depth": 3,
+                "id": "ruby"
+              }
+            ]
           }
         ]
       },
@@ -800,9 +817,26 @@
       "slug": "index",
       "headings": [
         {
-          "title": "Other Style Guides",
+          "title": "APIs",
           "depth": 2,
-          "id": "other-style-guides"
+          "id": "apis"
+        },
+        {
+          "title": "Style Guides",
+          "depth": 2,
+          "id": "style-guides",
+          "headings": [
+            {
+              "title": "Javascript",
+              "depth": 3,
+              "id": "javascript"
+            },
+            {
+              "title": "Ruby",
+              "depth": 3,
+              "id": "ruby"
+            }
+          ]
         }
       ]
     },
