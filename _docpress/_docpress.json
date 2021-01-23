@@ -243,6 +243,19 @@
             ]
           },
           {
+            "title": "Linters",
+            "source": "docs/javascript/linters.md",
+            "url": "javascript/linters.html",
+            "slug": "javascriptlinters",
+            "headings": [
+              {
+                "title": "ESLint",
+                "depth": 2,
+                "id": "eslint"
+              }
+            ]
+          },
+          {
             "title": "Operators",
             "source": "docs/javascript/operators.md",
             "url": "javascript/operators.html",
@@ -280,9 +293,9 @@
           },
           {
             "title": "React",
-            "source": "docs/javascript/react.md",
-            "url": "javascript/react.html",
-            "slug": "javascriptreact",
+            "source": "docs/javascript/react/overview.md",
+            "url": "javascript/react/overview.html",
+            "slug": "javascriptreactoverview",
             "headings": [
               {
                 "title": "Lifecycle",
@@ -421,7 +434,73 @@
                 "depth": 2,
                 "id": "todo"
               }
+            ],
+            "sections": [
+              {
+                "title": "API",
+                "source": "docs/javascript/react/api.md",
+                "url": "javascript/react/api.html",
+                "slug": "javascriptreactapi"
+              },
+              {
+                "title": "Libraries",
+                "source": "docs/javascript/react/libraries.md",
+                "url": "javascript/react/libraries.html",
+                "slug": "javascriptreactlibraries",
+                "headings": [
+                  {
+                    "title": "React Router",
+                    "depth": 2,
+                    "id": "react-router",
+                    "headings": [
+                      {
+                        "title": "Router",
+                        "depth": 3,
+                        "id": "router"
+                      },
+                      {
+                        "title": "Switch",
+                        "depth": 3,
+                        "id": "switch"
+                      },
+                      {
+                        "title": "Route",
+                        "depth": 3,
+                        "id": "route"
+                      },
+                      {
+                        "title": "History",
+                        "depth": 3,
+                        "id": "history"
+                      },
+                      {
+                        "title": "Params",
+                        "depth": 3,
+                        "id": "params"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "React Redux",
+                    "depth": 2,
+                    "id": "react-redux",
+                    "headings": [
+                      {
+                        "title": "Flux",
+                        "depth": 3,
+                        "id": "flux"
+                      }
+                    ]
+                  }
+                ]
+              }
             ]
+          },
+          {
+            "title": "Testing",
+            "source": "docs/javascript/testing.md",
+            "url": "javascript/testing.html",
+            "slug": "javascripttesting"
           },
           {
             "title": "Variables",
@@ -1038,6 +1117,19 @@
         }
       ]
     },
+    "javascript/linters.html": {
+      "source": "docs/javascript/linters.md",
+      "title": "Linters - CodeKindness",
+      "pageTitle": "Linters",
+      "slug": "javascriptlinters",
+      "headings": [
+        {
+          "title": "ESLint",
+          "depth": 2,
+          "id": "eslint"
+        }
+      ]
+    },
     "javascript/operators.html": {
       "source": "docs/javascript/operators.md",
       "title": "Operators - CodeKindness",
@@ -1074,11 +1166,11 @@
         }
       ]
     },
-    "javascript/react.html": {
-      "source": "docs/javascript/react.md",
+    "javascript/react/overview.html": {
+      "source": "docs/javascript/react/overview.md",
       "title": "React - CodeKindness",
       "pageTitle": "React",
-      "slug": "javascriptreact",
+      "slug": "javascriptreactoverview",
       "headings": [
         {
           "title": "Lifecycle",
@@ -1218,6 +1310,70 @@
           "id": "todo"
         }
       ]
+    },
+    "javascript/react/api.html": {
+      "source": "docs/javascript/react/api.md",
+      "title": "API - CodeKindness",
+      "pageTitle": "API",
+      "slug": "javascriptreactapi"
+    },
+    "javascript/react/libraries.html": {
+      "source": "docs/javascript/react/libraries.md",
+      "title": "Libraries - CodeKindness",
+      "pageTitle": "Libraries",
+      "slug": "javascriptreactlibraries",
+      "headings": [
+        {
+          "title": "React Router",
+          "depth": 2,
+          "id": "react-router",
+          "headings": [
+            {
+              "title": "Router",
+              "depth": 3,
+              "id": "router"
+            },
+            {
+              "title": "Switch",
+              "depth": 3,
+              "id": "switch"
+            },
+            {
+              "title": "Route",
+              "depth": 3,
+              "id": "route"
+            },
+            {
+              "title": "History",
+              "depth": 3,
+              "id": "history"
+            },
+            {
+              "title": "Params",
+              "depth": 3,
+              "id": "params"
+            }
+          ]
+        },
+        {
+          "title": "React Redux",
+          "depth": 2,
+          "id": "react-redux",
+          "headings": [
+            {
+              "title": "Flux",
+              "depth": 3,
+              "id": "flux"
+            }
+          ]
+        }
+      ]
+    },
+    "javascript/testing.html": {
+      "source": "docs/javascript/testing.md",
+      "title": "Testing - CodeKindness",
+      "pageTitle": "Testing",
+      "slug": "javascripttesting"
     },
     "javascript/variables.html": {
       "source": "docs/javascript/variables.md",
@@ -1602,9 +1758,13 @@
     "docs/architecture/testing.md": "architecture/testing.html",
     "docs/devops/overview.md": "devops/overview.html",
     "docs/javascript/overview.md": "javascript/overview.html",
+    "docs/javascript/linters.md": "javascript/linters.html",
     "docs/javascript/operators.md": "javascript/operators.html",
     "docs/javascript/properties.md": "javascript/properties.html",
-    "docs/javascript/react.md": "javascript/react.html",
+    "docs/javascript/react/overview.md": "javascript/react/overview.html",
+    "docs/javascript/react/api.md": "javascript/react/api.html",
+    "docs/javascript/react/libraries.md": "javascript/react/libraries.html",
+    "docs/javascript/testing.md": "javascript/testing.html",
     "docs/javascript/variables.md": "javascript/variables.html",
     "docs/ruby/overview.md": "ruby/overview.html",
     "docs/ruby/gems.md": "ruby/gems.html",

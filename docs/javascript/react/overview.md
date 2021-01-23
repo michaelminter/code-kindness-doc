@@ -467,12 +467,13 @@ Hooks are JavaScript functions, but they impose two additional rules:
 https://reactjs.org/docs/hooks-overview.html
 
 ### State Hooks
+
 ```js
-import React, { useState } from 'react';
+import React, {useState} from 'docs/javascript/react/overview';
 
 function Example() {
   const [count, setCount] = useState(0);
-  
+
   return (
     <div>
       <p>You clicked {count} times</p>
@@ -541,7 +542,7 @@ The set of predefined prop types:
 We can define `propTypes` for `User` component as below:
 
 ```jsx harmony
-import React from 'react'
+import React from 'docs/javascript/react/overview'
 import PropTypes from 'prop-types'
 
 class User extends React.Component {
@@ -566,7 +567,7 @@ class User extends React.Component {
 *The Equivalent Functional Component*
 
 ```jsx harmony
-import React from 'react'
+import React from 'docs/javascript/react/overview'
 import PropTypes from 'prop-types'
 
 function User() {
@@ -715,6 +716,7 @@ this.setState((prevState, props) => ({
 ## TODO
 [https://itnext.io/reactjs-interview-questions-for-senior-developers-64618f6a0aca]()
 
+- Folder Structure
 - ES6
 - Babel
 - Redux

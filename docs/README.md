@@ -13,9 +13,13 @@ Documentation
   * [Overview](devops/overview.md)
 * Javascript
   * [Overview](javascript/overview.md)
+  * [Linters](javascript/linters.md)
   * [Operators](javascript/operators.md)
   * [Properties](javascript/properties.md)
-  * [React](javascript/react.md)
+  * [React](javascript/react/overview.md)
+    * [API](javascript/react/api.md)
+    * [Libraries](javascript/react/libraries.md)
+  * [Testing](javascript/testing.md)
   * [Variables](javascript/variables.md)
 * Ruby
   * [Overview](ruby/overview.md)
