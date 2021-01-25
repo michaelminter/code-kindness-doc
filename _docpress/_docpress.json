@@ -430,6 +430,11 @@
                 ]
               },
               {
+                "title": "Compared",
+                "depth": 2,
+                "id": "compared"
+              },
+              {
                 "title": "TODO",
                 "depth": 2,
                 "id": "todo"
@@ -1303,6 +1308,11 @@
               "id": "callbacks"
             }
           ]
+        },
+        {
+          "title": "Compared",
+          "depth": 2,
+          "id": "compared"
         },
         {
           "title": "TODO",

@@ -142,6 +142,8 @@ class Greeting extends React.Component {
 }
 ```
 
+The `render()` method is the only required method in a class component.
+
 **Controlled Components:** A component that controls the input elements within the forms on subsequent user input.
 
 ```js
@@ -304,6 +306,11 @@ const {Provider, Consumer} = React.createContext(defaultValue)
 ```
 
 ### Constructor
+The constructor is mainly used for two purposes,
+
+1. To initialize local state by assigning object to `this.state`.
+2. For binding event handler methods to the instance.
+
 A child class constructor cannot make use of `this` reference until `super()` method has been called. The same applies for ES6 sub-classes as well. The main reason of passing props parameter to `super()` call is to access `this.props` in your child constructors.
 
 **Passing props:**
@@ -398,6 +405,28 @@ After that use it as a regular component:
   <MyWidget />
 </ErrorBoundary>
 ```
+
+`Try catch` blocks work with *imperative code* whereas error boundaries are meant for *declarative code* to render on the screen.
+
+For example, the try catch block used below is for imperative code.
+
+```javascript
+try {
+  showButton();
+} catch (error) {
+  // ...
+}
+```
+
+Whereas error boundaries wrap declarative code.
+
+```javascript
+<ErrorBoundary>
+  <MyComponent />
+</ErrorBoundary>
+```
+
+So if an error occurs in a **componentDidUpdate** method caused by a **setState** somewhere deep in the tree, it will still correctly propagate to the closest error boundary.
 
 ### Rendering
 `render()` is where the UI gets updated and rendered. `render()` is the required lifecycle method in React.
@@ -516,12 +545,23 @@ The primary purpose of props in React is to provide following component function
 - Use via this.props.reactProp inside component's render() method.
 
 ```js
-<Element reactProp={'1'} />
+<Element reactProp={ '1' } />
 ```
 
 This `reactProp` name then becomes a property attached to React's native props object which originally already exists on all components created using React library.
 
 The React philosophy is that props should be immutable and top-down. This means that a parent can send any prop values to a child, but the child can't modify received props.
+
+If you pass no value for a prop, it defaults to `true`. This behavior is available so that it matches the behavior of HTML.
+
+The below expressions are equivalent,
+
+```javascript
+<MyInput autocomplete />
+
+<MyInput autocomplete={ true } />
+```
+**Note:** It is not recommended to use this approach because it can be confused with the ES6 object shorthand. Example: `{name}` which is short for `{name: name}`.
 
 ### Validating
 When the application is running in *development mode*, React will automatically check all props that we set on components to make sure they have *correct type*. If the type is incorrect, React will generate warning messages in the console. It's disabled in *production mode* due to performance impact. The mandatory props are defined with `isRequired`.
@@ -559,6 +599,19 @@ class User extends React.Component {
       </>
     )
   }
+}
+```
+
+You can use `oneOfType()` method of `PropTypes`.
+
+For example, the height property can be defined with either `string` or `number` type as below:
+
+```js
+Component.PropTypes = {
+  size: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number
+  ])
 }
 ```
 
@@ -713,10 +766,23 @@ this.setState((prevState, props) => ({
 // this.state.count === 3 as expected
 ```
 
+## Compared
+| React | Angular |
+| ----- | ------- |
+| React is a library and has only the View layer | Angular is a framework and has complete MVC functionality |
+| React handles rendering on the server side | AngularJS renders only on the client side but Angular 2 and above renders on the server side |
+| React uses JSX that looks like HTML in JS which can be confusing | Angular follows the template approach for HTML, which makes code shorter and easy to understand |
+| React Native, which is a React type to build mobile applications are faster and more stable | Ionic, Angular's mobile native app is relatively less stable and slower |
+| In React, data flows only in one way and hence debugging is easy | In Angular, data flows both way i.e it has two-way data binding between children and parent and hence debugging is often difficult |
+
+**Note:** The above list of differences are purely opinionated and it vary based on the professional experience. But they are helpful as base parameters.
+
+
 ## TODO
 [https://itnext.io/reactjs-interview-questions-for-senior-developers-64618f6a0aca]()
 
 - Folder Structure
+- Consumer 
 - ES6
 - Babel
 - Redux

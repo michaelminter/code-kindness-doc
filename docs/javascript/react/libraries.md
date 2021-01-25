@@ -176,8 +176,6 @@ Redux follows three fundamental principles:
 2. **State is read-only:** The only way to change the state is to emit an action, an object describing what happened. This ensures that neither the views nor the network callbacks will ever write directly to the state.
 3. **Changes are made with pure functions:** To specify how the state tree is transformed by actions, you write reducers. Reducers are just pure functions that take the previous state and an action as parameters, and return the next state.
 
-
-
 You could use **Context** in your application directly and it's great for passing down data to deeply nested components
 which is what it was designed for.
 
@@ -190,4 +188,13 @@ React Redux uses `context` internally but it doesn't expose this fact in the pub
 The workflow between dispatcher, stores and views components with distinct inputs and outputs as follows:
 
 ![flux](https://raw.githubusercontent.com/sudheerj/reactjs-interview-questions/master/images/flux.png)
+
+| Flux | Redux |
+| ----- | ------- |
+| State is mutable | State is immutable |
+| The Store contains both state and change logic | The Store and change logic are separate |
+| There are multiple stores exist | There is only one store exist |
+| All the stores are disconnected and flat | Single store with hierarchical reducers|
+| It has a singleton dispatcher | There is no concept of dispatcher |
+| React components subscribe to the store | Container components uses connect function|
 
