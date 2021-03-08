@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/style.css?t=90051322">
+    <script src="../assets/script.js?t=93f1a66c"></script>
+    <title>Testing - CodeKindness</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <ul>
+          <li class="menu-item -level-0 -parent">
+            <ul class="submenu">
+              <li class="menu-item -level-1"><a class="link title  link-index" href="../index.html">CodeKindness</a>
+              </li>
+              <li class="menu-item -level-1 -parent"><span class="title">Architecture</span>
+                <ul class="submenu">
+                  <li class="menu-item -level-2"><a class="link title  link-architectureoverview" href="../architecture/overview.html">Overview</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-apioverview" href="../api/overview.html">APIs</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-architecturebusiness" href="../architecture/business.html">Business</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-architectureproject_management" href="../architecture/project_management.html">Project Management</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-architecturesecurity" href="../architecture/security.html">Security</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-architecturetesting" href="../architecture/testing.html">Testing</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item -level-1 -parent"><span class="title">DevOps</span>
+                <ul class="submenu">
+                  <li class="menu-item -level-2"><a class="link title  link-devopsoverview" href="../devops/overview.html">Overview</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item -level-1 -parent"><span class="title">Javascript</span>
+                <ul class="submenu">
+                  <li class="menu-item -level-2"><a class="link title  link-javascriptoverview" href="../javascript/overview.html">Overview</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-javascriptlinters" href="../javascript/linters.html">Linters</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-javascriptoperators" href="../javascript/operators.html">Operators</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-javascriptproperties" href="../javascript/properties.html">Properties</a>
+                  </li>
+                  <li class="menu-item -level-2 -parent"><a class="link title  link-javascriptreactoverview" href="../javascript/react/overview.html">React</a>
+                    <ul class="submenu">
+                      <li class="menu-item -level-3"><a class="link title  link-javascriptreactapi" href="../javascript/react/api.html">API</a>
+                      </li>
+                      <li class="menu-item -level-3"><a class="link title  link-javascriptreactlibraries" href="../javascript/react/libraries.html">Libraries</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title -active link-javascripttesting" href="../javascript/testing.html">Testing</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-javascriptvariables" href="../javascript/variables.html">Variables</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item -level-1 -parent"><span class="title">Ruby</span>
+                <ul class="submenu">
+                  <li class="menu-item -level-2"><a class="link title  link-rubyoverview" href="../ruby/overview.html">Overview</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-rubygems" href="../ruby/gems.html">Gems</a>
+                  </li>
+                  <li class="menu-item -level-2"><a class="link title  link-rubyrails" href="../ruby/rails.html">Rails</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item -level-1 -parent"><span class="title">SQL</span>
+                <ul class="submenu">
+                  <li class="menu-item -level-2"><a class="link title  link-sqloverview" href="../sql/overview.html">Overview</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="body page-javascripttesting">
+        <div class="header-nav">
+          <div class="right"><a class="iconlink" href="https://github.com/michaelminter/code-kindness-doc" data-title="michaelminter/code-kindness-doc">
+              <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="testing">Testing</h1>
+<p><em>Jest</em> is a JavaScript unit testing framework created by Facebook based on Jasmine and provides automated mock creation
+and a <code>jsdom</code> environment. It&apos;s often used for testing components.</p>
+<p>There are couple of advantages compared to <em>Jasmine</em>:</p>
+<ul>
+<li>Automatically finds tests to execute in your source code.</li>
+<li>Automatically mocks dependencies when running your tests.</li>
+<li>Allows you to test asynchronous code synchronously.</li>
+<li>Runs your tests with a fake DOM implementation (via <code>jsdom</code>) so that your tests can be run on the command line.</li>
+<li>Runs tests in parallel processes so that they finish sooner.</li>
+</ul>
+<p>Let&apos;s write a test for a function that adds two numbers in <code>sum.js</code> file:</p>
+<pre><code class="lang-javascript"><span class="pl-k">const</span> sum = <span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a + b
+
+<span class="pl-k">export</span> <span class="pl-k">default</span> sum
+</code></pre>
+<p>Create a file named <code>sum.test.js</code> which contains actual test:</p>
+<pre><code class="lang-javascript"><span class="pl-k">import</span> sum <span class="pl-k">from</span> <span class="pl-s">&apos;./sum&apos;</span>
+
+test(<span class="pl-s">&apos;adds 1 + 2 to equal 3&apos;</span>, () =&gt; {
+  expect(sum(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>)).toBe(<span class="hljs-number">3</span>)
+})
+</code></pre>
+<p>And then add the following section to your <code>package.json</code>:</p>
+<pre><code class="lang-json">{
+  <span class="hljs-attr">&quot;scripts&quot;</span>: {
+    <span class="hljs-attr">&quot;test&quot;</span>: <span class="pl-s">&quot;jest&quot;</span>
+  }
+}
+</code></pre>
+<p>Finally, run <code>yarn test</code> or <code>npm test</code> and Jest will print a result:</p>
+<pre><code class="lang-console"><span class="hljs-meta">$</span><span class="bash"> yarn <span class="pl-c1">test</span></span>
+PASS ./sum.test.js
+&#x2713; adds 1 + 2 to equal 3 (2ms)
+</code></pre>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../javascript/react/libraries.html"><span class="title">Libraries</span></a></div>
+          <div class="right"><a href="../javascript/variables.html"><span class="label">Next: </span><span class="title">Variables</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
