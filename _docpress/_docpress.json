@@ -917,6 +917,24 @@
             ]
           }
         ]
+      },
+      {
+        "title": "SQL",
+        "sections": [
+          {
+            "title": "Overview",
+            "source": "docs/css/overview.md",
+            "url": "css/overview.html",
+            "slug": "cssoverview",
+            "headings": [
+              {
+                "title": "Spacing",
+                "depth": 2,
+                "id": "spacing"
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -1810,6 +1828,19 @@
           "id": "todo"
         }
       ]
+    },
+    "css/overview.html": {
+      "source": "docs/css/overview.md",
+      "title": "Overview - CodeKindness",
+      "pageTitle": "Overview",
+      "slug": "cssoverview",
+      "headings": [
+        {
+          "title": "Spacing",
+          "depth": 2,
+          "id": "spacing"
+        }
+      ]
     }
   },
   "sources": {
@@ -1833,6 +1864,7 @@
     "docs/ruby/overview.md": "ruby/overview.html",
     "docs/ruby/gems.md": "ruby/gems.html",
     "docs/ruby/rails.md": "ruby/rails.html",
-    "docs/sql/overview.md": "sql/overview.html"
+    "docs/sql/overview.md": "sql/overview.html",
+    "docs/css/overview.md": "css/overview.html"
   }
 }
