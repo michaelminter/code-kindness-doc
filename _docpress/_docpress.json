@@ -529,6 +529,11 @@
                     "id": "deep-copy"
                   }
                 ]
+              },
+              {
+                "title": "Conditional Operations",
+                "depth": 2,
+                "id": "conditional-operations"
               }
             ]
           }
@@ -1407,6 +1412,11 @@
               "id": "deep-copy"
             }
           ]
+        },
+        {
+          "title": "Conditional Operations",
+          "depth": 2,
+          "id": "conditional-operations"
         }
       ]
     },
