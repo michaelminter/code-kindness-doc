@@ -514,6 +514,28 @@
             "slug": "javascriptvariables",
             "headings": [
               {
+                "title": "Declaration",
+                "depth": 2,
+                "id": "declaration",
+                "headings": [
+                  {
+                    "title": "var",
+                    "depth": 3,
+                    "id": "var"
+                  }
+                ]
+              },
+              {
+                "title": "let",
+                "depth": 2,
+                "id": "let"
+              },
+              {
+                "title": "const",
+                "depth": 2,
+                "id": "const"
+              },
+              {
                 "title": "Cloning",
                 "depth": 2,
                 "id": "cloning",
@@ -1396,6 +1418,28 @@
       "pageTitle": "Variables",
       "slug": "javascriptvariables",
       "headings": [
+        {
+          "title": "Declaration",
+          "depth": 2,
+          "id": "declaration",
+          "headings": [
+            {
+              "title": "var",
+              "depth": 3,
+              "id": "var"
+            }
+          ]
+        },
+        {
+          "title": "let",
+          "depth": 2,
+          "id": "let"
+        },
+        {
+          "title": "const",
+          "depth": 2,
+          "id": "const"
+        },
         {
           "title": "Cloning",
           "depth": 2,

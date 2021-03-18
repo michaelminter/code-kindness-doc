@@ -60,6 +60,16 @@
                   </li>
                   <li class="menu-item -level-2"><a class="link title -active link-javascriptvariables" href="../javascript/variables.html">Variables</a>
                     <ul class="headings heading-list">
+                      <li class="heading-item -depth-2"><a class="hlink link-declaration" href="#declaration">Declaration</a>
+                        <ul class="heading-list -depth-2">
+                          <li class="heading-item -depth-3"><a class="hlink link-var" href="#var">var</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="heading-item -depth-2"><a class="hlink link-let" href="#let">let</a>
+                      </li>
+                      <li class="heading-item -depth-2"><a class="hlink link-const" href="#const">const</a>
+                      </li>
                       <li class="heading-item -depth-2"><a class="hlink link-cloning" href="#cloning">Cloning</a>
                         <ul class="heading-list -depth-2">
                           <li class="heading-item -depth-3"><a class="hlink link-shallow-copy" href="#shallow-copy">shallow copy</a>
@@ -101,6 +111,32 @@
           </div>
         </div>
         <div class="markdown-body"><h1 id="variables">Variables</h1>
+<h2 id="declaration">Declaration</h2>
+<blockquote>
+<p><strong>Note:</strong> while <code>var</code> has been available in JavaScript since its initial release, <code>let</code> and <code>const</code> are only available in ES6 (ES2015) and up.</p>
+</blockquote>
+<p>You can write all of these declarations in the global context (i.e. outside of any function), but even within a function, if you forget to write <code>var</code>, <code>let</code> or <code>const</code> before an assignment, the variable will automatically be global.</p>
+<h3 id="var">var</h3>
+<pre><code class="lang-js"><span class="pl-k">var</span> x; <span class="pl-c">// Declaration and initialization</span>
+x = <span class="pl-s">&quot;Hello World&quot;</span>; <span class="pl-c">// Assignment</span>
+
+<span class="pl-c">// Or all in one</span>
+<span class="pl-k">var</span> y = <span class="pl-s">&quot;Hello World&quot;</span>;
+</code></pre>
+<p>This declaration is probably the most popular, as there was no alternative until ECMAScript 6. Variables declared with <code>var</code> are available in the scope of the enclosing function. If there is no enclosing function, they are available globally.</p>
+<h2 id="let">let</h2>
+<pre><code class="lang-js"><span class="pl-k">let</span> x; <span class="pl-c">// Declaration and initialization</span>
+x = <span class="pl-s">&quot;Hello World&quot;</span>; <span class="pl-c">// Assignment</span>
+
+<span class="pl-c">// Or all in one</span>
+<span class="pl-k">let</span> y = <span class="pl-s">&quot;Hello World&quot;</span>;
+</code></pre>
+<p><code>let</code> is the descendant of <code>var</code> in modern JavaScript. Its scope is not only limited to the enclosing function, but also to its enclosing block statement. A block statement is everything inside <code>{</code> and <code>}</code>, (e.g. an if condition or loop). The benefit of <code>let</code> is it reduces the possibility of errors, as variables are only available within a smaller scope.</p>
+<h2 id="const">const</h2>
+<pre><code class="lang-js"><span class="pl-k">const</span> x = <span class="pl-s">&quot;Hello World&quot;</span>;
+</code></pre>
+<p>Technically a constant isn&#x2019;t a variable. The particularity of a constant is that you need to assign a value when declaring it and there is no way to reassign it. A const is limited to the scope of the enclosing block, like <code>let</code>.</p>
+<p>Constants should be used whenever a value must not change during the applications running time, as you&#x2019;ll be notified by an error when trying to overwrite them.</p>
 <h2 id="cloning">Cloning</h2>
 <h3 id="shallow-copy">shallow copy</h3>
 <pre><code class="lang-js"><span class="pl-k">let</span> newDescriptions = [...this.state.descriptions]
