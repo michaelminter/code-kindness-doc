@@ -27,5 +27,5 @@ Documentation
   * [Rails](ruby/rails.md)
 * SQL
   * [Overview](sql/overview.md)
-* SQL
+* CSS
   * [Overview](css/overview.md)
