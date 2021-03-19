@@ -216,6 +216,19 @@
                 "id": "amazon-web-services"
               }
             ]
+          },
+          {
+            "title": "Unix",
+            "source": "docs/devops/unix.md",
+            "url": "devops/unix.html",
+            "slug": "devopsunix",
+            "headings": [
+              {
+                "title": "Chaining Commands",
+                "depth": 2,
+                "id": "chaining-commands"
+              }
+            ]
           }
         ]
       },
@@ -1147,6 +1160,19 @@
         }
       ]
     },
+    "devops/unix.html": {
+      "source": "docs/devops/unix.md",
+      "title": "Unix - CodeKindness",
+      "pageTitle": "Unix",
+      "slug": "devopsunix",
+      "headings": [
+        {
+          "title": "Chaining Commands",
+          "depth": 2,
+          "id": "chaining-commands"
+        }
+      ]
+    },
     "javascript/overview.html": {
       "source": "docs/javascript/overview.md",
       "title": "Overview - CodeKindness",
@@ -1852,6 +1878,7 @@
     "docs/architecture/security.md": "architecture/security.html",
     "docs/architecture/testing.md": "architecture/testing.html",
     "docs/devops/overview.md": "devops/overview.html",
+    "docs/devops/unix.md": "devops/unix.html",
     "docs/javascript/overview.md": "javascript/overview.html",
     "docs/javascript/linters.md": "javascript/linters.html",
     "docs/javascript/operators.md": "javascript/operators.html",

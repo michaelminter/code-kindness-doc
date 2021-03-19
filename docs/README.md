@@ -11,6 +11,7 @@ Documentation
   * [Testing](architecture/testing.md)
 * DevOps
   * [Overview](devops/overview.md)
+  * [Unix](devops/unix.md)
 * Javascript
   * [Overview](javascript/overview.md)
   * [Linters](javascript/linters.md)
