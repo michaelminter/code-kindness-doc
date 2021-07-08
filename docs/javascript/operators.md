@@ -18,3 +18,17 @@ obj.func?.(args)
 ```
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining
+
+## nullish Coalescing Operator
+
+In JavaScript, if a certain value is falsy (like `null`, `undefined`, `0`, `''`, `NaN`), we can use the or (`||`) conditional to provide a fallback value.
+
+It will return its right hand operand when its left hand operand is `null` or `undefined`. Otherwise it will return its left hand side operand:
+
+```js
+null ?? 'fallback';
+// "fallback"
+
+0 ?? 42;
+// 0
+```
