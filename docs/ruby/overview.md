@@ -1,6 +1,14 @@
 # Ruby
 Ruby is a dynamic, interpreted, reflective, object-oriented, general-purpose programming language.
 
+## Style Guides
+
+[Shopify](https://shopify.github.io/ruby-style-guide/)
+: This Style Guide is the result of over a decade of Ruby development at Shopify.
+
+[Github](https://github.com/github/rubocop-github/blob/master/STYLEGUIDE.md)
+: This is GitHub's Ruby Style Guide, inspired by RuboCop's guide.
+
 ## Class
 the blueprint from which individual objects are created.
 

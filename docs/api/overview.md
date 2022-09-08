@@ -1,5 +1,12 @@
 # API
 
+## APIs
+[JSON API](https://jsonapi.org/format/)
+: A specification for building APIs in JSON
+
+[FHIR](https://www.hl7.org/fhir/http.html)
+: FHIR is described as a 'RESTful' specification based on common industry level use of the term REST.
+
 ## RESTful
 REST (REpresentational State Transfer), is basically an architectural style of development having some principles:
 
