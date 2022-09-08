@@ -1,4 +1,4 @@
-# Unix
+# Bash
 
 ## Chaining Commands
 
