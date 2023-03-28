@@ -1,4 +1,5 @@
-## Concepts
+# Architecture
+
 Architecture and design are closely related; the main difference between them is really about which way we face. Architecture faces towards strategy, structure and purpose, towards the abstract. Design faces towards implementation and practice, towards the concrete.
 
 - Architecture - A plan for the structure of something.
@@ -6,12 +7,19 @@ Architecture and design are closely related; the main difference between them is
 
 [https://simplicable.com/new/architecture-vs-design]()
 
-### Architectures
+## Types of Architectures
 - Monolith
 - Microservice
 
 While a monolithic application is a single unified unit, a microservices architecture breaks it down into a collection of smaller independent units. These units carry out every application process as a separate service. So all the services have their own logic and database as well as perform specific functions.
-### Design Patterns
+
+#### Service Oriented Architecture (SOA)
+
+is an architectural style that focuses on discrete services instead of a monolithic design.
+
+SOA is a distributed architecture that is based on the concept of services. Services are self-contained units of functionality that can be accessed remotely and act as the fundamental building blocks of SOA.
+
+## Design Patterns
 - Adapter: helps two incompatible interfaces to work together.
 - Builder: create complex objects that are hard to configure.
 - Command: performs some specific task without having any information about the receiver of the request.
@@ -31,15 +39,17 @@ a way to classify programming languages based on their features.
 
 [https://en.wikipedia.org/wiki/Comparison_of_programming_paradigms]()
 
-### Functional
+#### Functional
 Treats computation as the evaluation of mathematical functions avoiding state and mutable data.
-### Object Oriented
+
+#### Object Oriented
 Treats datafields as objects manipulated through predefined methods only.
 
 ## Type Systems
-### Statically/Strongly Typed
+#### Statically/Strongly Typed
 Once you set a variable to a type, you cannot change it.
-### Dynamically Typed
+
+#### Dynamically Typed
 Do type checking at run-time as opposed to compile-time.
 
 ## Recursion

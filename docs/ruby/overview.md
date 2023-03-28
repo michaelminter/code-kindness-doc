@@ -9,6 +9,9 @@ Ruby is a dynamic, interpreted, reflective, object-oriented, general-purpose pro
 [Github](https://github.com/github/rubocop-github/blob/master/STYLEGUIDE.md)
 : This is GitHub's Ruby Style Guide, inspired by RuboCop's guide.
 
+## Analyzers
+https://blog.appsignal.com/2022/10/19/improve-code-in-your-ruby-application-with-rubycritic.html
+
 ## Class
 the blueprint from which individual objects are created.
 

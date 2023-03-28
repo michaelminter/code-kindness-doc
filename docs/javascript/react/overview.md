@@ -1,4 +1,7 @@
 # React
+71% of devs use React
+https://jamstack.org/survey/2022/#frameworks-by-usage-and-satisfaction
+
 React is an open-source frontend JavaScript library which is used for building user interfaces especially for single page applications.
 
 The major features of React are:
